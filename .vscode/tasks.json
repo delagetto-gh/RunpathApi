@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [{
+      "label": "build",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Runpath.Api/Runpath.Api.csproj"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "runTests",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "test",
+        "${workspaceFolder}/Runpath.Tests/Runpath.Tests.csproj"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "runApi",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "run",
+        "--project",
+        "${workspaceFolder}/Runpath.Api/Runpath.Api.csproj"
+      ],
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}
